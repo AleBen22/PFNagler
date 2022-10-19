@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="estilos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+   <link rel="shortcut icon" href="imagenes/LogoLoft.png" type="image/x-icon">
+    <title>admLoft</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="botonera">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="expensas.html">Expensas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="titulo">
+            <h1>admLoft</h1>   
+        </div>        
+        <div class="redes">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </header>
+    <section>
+        <div class="cuadrosExpensas">
+            <div class="textoExpensasMini">
+                <span>Contamos con un poderoso sistema de liquidaciones que nos permite un riguso control de los gastos liquidados, ademas de la realizacion de analisis de aumentos, duplicaciones de documentos, etc.</span>                
+            </div>
+                <form class="formExpensa" id="expensa" action="#" method="POST">
+                    <h3>Solicita tu expensa</h3>
+                    <label for="Nombre">Edificio</label>
+                    <br>
+                    <input type="text" name="Nombre" class="textbox" placeholder="Ingrese el Nombre" required>
+                    <br>
+                    <label for="Unidad">Unidad</label>
+                    <br>
+                    <input type="number" name="Unidad" class="textbox" placeholder="Ingrese número de Unidad" required>
+                    <br>
+                    <label for="Periodo">Periodo</label>
+                    <br>
+                    <select name="Periodo" class="textbox" required>
+                        <option value="JUL-2022">JUL-2022</option>
+                        <option value="AGO-2022">AGO-2022</option>
+                        <option value="SEP-2022">SEP-2022</option>
+                        <option value="OCT-2022">OCT-2022</option>
+                    </select>
+                    <br>
+                    <input type="submit" name="submit" class="button" value="Enviar"/>
+                    <input type="reset" name="cancel" class="button" value="Cancelar"/>
+                </form>
+        </div>
+        <div class="cuadrosExpensas">
+            <div class="definicionExpensas">
+                <span>Expensas</span>
+            </div>
+            <div class="textoExpensas">
+                <span>Próximamente, mediante este sitio, podrá acceder: a sus comprobantes de pago, gestión de reclamos realizados, historial de expensas, actas de asamblea, información de los proveedores contratados, instructivos de acceso a cámaras de seguridad.</span>
+                <br>
+                <br>
+                <span>Además, si su edificio cuenta con control de acceso electrónico podrá tener control de las llaves de acceso que posee como así también solicitar nuevas o dar de baja en caso de pérdida o robo.</span>
+            </div>
+        </div>
+        <div class="cuadrosExpensas">
+            <form class="formExpensa" id="expensa" action="#" method="POST">
+                <h3>Informa tu pago</h3>
+                <label for="Nombre">Código Pago Electrónico</label>
+                <br>
+                <input type="number" name="Nombre" class="textbox" placeholder="Ingrese el C.P.E." required>
+                <br>
+                <label for="Fecha">Fecha</label>
+                <br>
+                <input type="date" name="Fecha" class="textbox" required>
+                <br>
+                <label for="Importe">Importe</label>
+                <br>
+                <input type="number" name="Importe" class="textbox" required>
+                <br>
+                <input type="submit" name="submit" class="button" value="Enviar"/>
+                <input type="reset" name="cancel" class="button" value="Cancelar"/>
+            </form>
+            <div class="textoExpensasMini">
+                <span>Podrá realizar pagos mediante transferencia bancaria, depósito bancario, cheque, medios de pago como PagoMisCuentas, BaproPago, Red Link, PagoFacil y una amplia variedad de medios.</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+       <div class="footer">
+            <p id="derechos">Administración Loft - Todos los derechos reservados</p>
+       </div>
+       <div class="footer">
+            <p id="desarrollo">Desarrollado por ABN</p>
+       </div> 
+    </footer>
+</body>
+</html>
