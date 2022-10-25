@@ -5,30 +5,18 @@
     font-family: 'Indie Flower', cursive;
 }
 
-header {
+.header {
     width: 100%;
     background-color:#ff8800;    
-    height: 140px;
-    position: sticky;
+    height: 160px;
+    position: fixed;
     top: 0;
+    z-index: 10;
     box-shadow: 2px 3px 10px #000000;
 }
 
-.botonera {
-    width: 100%;
-    height: 40px;
-}
-
-.botonera ul {
-    list-style: none;
-    font-size:0;
-    text-align: center;
-}
-
 .botonera li {
-    display: inline-block;
     width: 130px;
-    position:relative;
     font-size: 20px;
     text-align: center;
     border: 1px solid #000;
@@ -37,19 +25,10 @@ header {
     background-color: #fff;    
 }
 
-.botonera a {
-    text-decoration: none;
-    color:#000;
-}
-
 .botonera li:hover {
     background-color: rgba(255, 123, 0, 0.8);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
-
-.botonera a:hover {
-    color:#fff;
-    }
 
 .titulo {
     width: 50%;
@@ -81,14 +60,16 @@ h3 {
 
 section {
     width: 100%;
-    height: calc(100vh - 140px);
+    margin-top: 140px;
+    height: 780px;
+    margin-bottom: 40px;
     background-image: url(imagenes/fondo.jpg);
     background-size: cover;
 }
 
 .cuadrosIndex {
     width: 50%;
-    height: calc(100vh - 140px);
+    height: auto;
     float: left;
 }
 
@@ -109,7 +90,7 @@ section {
 .textoIndex {
     width: 80%;
     margin-left: 10%;
-    height: 140px;
+    height: auto;
     margin-top: 70px;
     padding: 10px;
     float: left;
@@ -130,7 +111,7 @@ section {
     line-height: 7vh;
     float: left;
     margin-left: 15%;
-    margin-top: 3vh;
+    margin-top: 4vh;
     border:#000 solid 1px;
     letter-spacing: 1px;
     text-align: center;
@@ -142,46 +123,37 @@ section {
     overflow: hidden;
 }
 
-.cuadrosClientes {
-    width: 50%;
-    height: calc (90vh - 140px);
-    float: left;
-}
-
 .textoClientes {
-    width: 80%;
-    margin-left: 10%;
-    height: 270px;
-    margin-top: 40px;
+    height: auto;
     float: left;
-    padding-right: 10px;
+    margin-top: 300px;
+    padding: 15px;
     border:#000 solid 1px;
     letter-spacing: 1px;
-    text-align: justify;
-    font-size: 23px;
+    text-align: center;
+    font-size: 35px;
     color:#fff;
-    border-radius: 40px;
+    border-radius: 10px;
     background-color: rgba(255, 123, 0, 0.8);
     box-shadow: 2px 3px 10px #000000;
-    overflow: auto;
+    overflow: hidden;
+}
+
+.cuadroClientes {
+    margin-top: 65px;
+    padding: 0;
+    height: 660px;
+    float: left;
+    border:#000 solid 1px;
+    border-radius: 40px;
+    box-shadow: 2px 3px 10px #000000;
+    overflow: hidden;
 }
 
 .imgClientes {
-    width: 50%;
-    height: 100%;
-    float: left;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-.titClientes {
-    width: 49%;
-    height: 80px;
-    line-height: 70px;
-    text-align: center;
-    margin-left: 1%;
-    padding-bottom: 10px;
-    float: left;
+    padding: 0;
+    height: 660px;
+    overflow: hidden;
 }
 
 .cuadrosServicios {
@@ -210,7 +182,7 @@ section {
 .textoServicios {
     width: 80%;
     margin-left: 10%;
-    height: 230px;
+    height: 250px;
     margin-top: 70px;
     padding: 10px;
     float: left;
@@ -244,7 +216,7 @@ section {
     line-height: 60px;
     float: left;
     margin-left: 10%;
-    margin-top: 80px;
+    margin-top: 90px;
     border:#000 solid 1px;
     letter-spacing: 1px;
     text-align: center;
@@ -259,7 +231,7 @@ section {
 .textoExpensas {
     width: 80%;
     margin-left: 10%;
-    height: 480px;
+    height: 500px;
     margin-top: 70px;
     padding: 20px;
     float: left;
@@ -277,7 +249,7 @@ section {
 .textoExpensasMini {
     width: 80%;
     margin-left: 10%;
-    height: 190px;
+    height: 210px;
     margin-top: 70px;
     padding: 10px;
     float: left;
@@ -295,7 +267,7 @@ section {
 .formExpensa {
     width: 80%;
     margin-left: 10%;
-    height: 370px;
+    height: 390px;
     margin-top: 70px;
     padding-top: 10px;
     padding-left: 18%;
@@ -390,7 +362,6 @@ section {
 
 #formContacto .textbox{
 	width: 70%;
-    margin-bottom: 10px;
   	border-radius: 10px;
 	border: 4px, #ff8800;
     border-color: #ff8800;
@@ -398,15 +369,21 @@ section {
     text-align: center;
     font-size: 20px;
 }
-	
+
+#formContacto label{
+    margin-bottom: 0px;
+    margin-top : 15px;
+    font-size: 20px;
+}
+
 #formContacto .button{
 	position: relative;
 	width: 20%;
 	height: 40px;
 	border-radius: 30px;
 	border: 0 none;
+    margin-top: 10px;
 	margin-left: 9%;
-    margin-top: 5px;
     font-size: 20px;
     background-color: #ff8800;
     box-shadow: 
@@ -425,6 +402,9 @@ section {
 footer {
     width: 100%;
     bottom: 0;
+    position: fixed;
+    z-index: 10;
+    box-shadow: -2px -3px 10px #000000;
 }
 
 .footer {
@@ -444,4 +424,83 @@ footer {
 #desarrollo {
     text-align: right;
     margin-right: 40px;
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    
+    section {
+        height: 900px;
+    }
+    .textoClientes {
+        margin-top: 60px;
+        font-size: 20px;
+    }
+
+    .cuadroClientes {
+        margin-top: 60px;
+    }
+
+}
+
+@media all and (max-width: 767px) {
+    
+    section {
+        height: 800px;
+    }
+
+    .header {
+        height: 140px;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        box-shadow: 2px 3px 10px #000000;
+    }
+
+    .titulo {
+        height:80px;
+    }
+    
+    h1 {
+        font-size: 70px;
+        margin-left: 15px;
+    }
+
+    .textoClientes {
+        margin-top: 40px;
+        font-size: 20px;
+        border-radius: 0px;
+    }
+
+    .cuadroClientes {
+        margin-top: 40px;
+    }
+
+    .cuadroClientes {
+        height: 500px;
+        border:#000 solid 1px;
+        border-radius: 0px;
+        box-shadow: 2px 3px 10px #000000;
+    }
+    
+    .imgClientes {
+        padding: 0;
+        height: 500px;
+        overflow: hidden;
+    }
+    
+
+    .botonera {
+        padding: 0;
+        z-index: 50;
+    }
+
+    .botonera li {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        border: none;
+    }
+    
+
+
 }
