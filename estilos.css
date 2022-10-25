@@ -5,6 +5,56 @@
     font-family: 'Indie Flower', cursive;
 }
 
+@keyframes vent {
+    40% {
+        transform: translate(0) scale(.4);
+        }
+        
+    50% {
+        transform: translate(0) scale(.5);
+        }
+        
+    55% {
+        transform: translate(0) scale(.55);
+        }
+        
+    60% {
+        transform: translate(0) scale(.6);
+        }
+    
+    65% {
+        transform: translate(0) scale(.65);
+        }
+    
+    70% {
+        transform: translate(0) scale(.7);
+        }
+    
+    75% {
+        transform: translate(0) scale(.75);
+        }
+    
+    80% {
+        transform: translate(0) scale(.8);
+        }
+    
+    85% {
+        transform: translate(0) scale(.85);
+        }
+    
+    90% {
+        transform: translate(0) scale(.9);
+        }
+    
+    95% {
+        transform: translate(0) scale(.95);
+        }
+    
+    100% {
+        transform: translate(0) scale(1);
+        }
+}
+
 .header {
     width: 100%;
     background-color:#ff8800;    
@@ -81,7 +131,7 @@ section {
 
 #titulo h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     color:#fff; 
     letter-spacing: 3px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
@@ -97,18 +147,19 @@ section {
     border:#000 solid 1px;
     letter-spacing: 1px;
     text-align: justify;
-    font-size: 25px;
+    font-size: 22px;
     color:#fff;
     border-radius: 10px;
-    background-color: rgba(255, 123, 0, 0.8);
+    background-color: rgba(64, 120, 184, 0.8);
     box-shadow: 2px 3px 10px #000000;
     overflow: auto;
+    transform: translate(-500px, 500px);
+    animation: vent 1s forwards;
 }
 
 .definicion {
     width: 70%;
-    height: 7vh;
-    line-height: 7vh;
+    height: auto;
     float: left;
     margin-left: 15%;
     margin-top: 4vh;
@@ -118,7 +169,7 @@ section {
     font-size: 35px;
     color:#fff;
     border-radius: 10px;
-    background-color: rgba(255, 123, 0, 0.8);
+    background-color: rgba(64, 120, 184, 0.8);
     box-shadow: 2px 3px 10px #000000;
     overflow: hidden;
 }
@@ -134,9 +185,11 @@ section {
     font-size: 35px;
     color:#fff;
     border-radius: 10px;
-    background-color: rgba(255, 123, 0, 0.8);
+    background-color: rgba(64, 120, 184, 0.8);
     box-shadow: 2px 3px 10px #000000;
     overflow: hidden;
+    transform: translate(-500px, 500px);
+    animation: vent 1s forwards;
 }
 
 .cuadroClientes {
@@ -148,6 +201,8 @@ section {
     border-radius: 40px;
     box-shadow: 2px 3px 10px #000000;
     overflow: hidden;
+    transform: translate(500px, -500px);
+    animation: vent 1s forwards;
 }
 
 .imgClientes {
@@ -157,21 +212,21 @@ section {
 }
 
 .cuadrosServicios {
-    width: 33%;
-    height: calc (90vh - 140px);
     float: left;
+    margin: 0;
 }
 
 .imgServicios {
-    width: 74px;
-    height: 74px;
+    width: 60px;
+    height: 60px;
     float: left;
     padding-bottom: 10px;
 }
 
 .titServicios {
-    width: calc(100% - 84px);
-    height: 74px;
+    width: calc(100% - 74px);
+    height: 60px;
+    font-size: 23px;
     line-height: 70px;
     text-align: center;
     margin-left: 10px;
@@ -180,28 +235,25 @@ section {
 }
 
 .textoServicios {
-    width: 80%;
-    margin-left: 10%;
-    height: 250px;
-    margin-top: 70px;
+    height: 240px;
+    margin-top: 60px;
     padding: 10px;
     float: left;
     border:#000 solid 1px;
     letter-spacing: 1px;
     text-align: justify;
-    font-size: 23px;
+    font-size: 20px;
     color:#fff;
     border-radius: 10px;
-    background-color: rgba(255, 123, 0, 0.8);
+    background-color: rgba(64, 120, 184, 0.8);
     box-shadow: 2px 3px 10px #000000;
     overflow: auto;
-
 }
 
 .textoServicios:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.8s;
-    filter: drop-shadow(8px 8px 10px rgb(255, 123, 0));
+    filter: drop-shadow(8px 8px 10px rgb(64, 120, 184));
 }
 
 .cuadrosExpensas {
@@ -223,7 +275,7 @@ section {
     font-size: 35px;
     color:#fff;
     border-radius: 10px;
-    background-color: rgba(255, 123, 0, 0.8);
+    background-color: rgba(64, 120, 184, 0.8);
     box-shadow: 2px 3px 10px #000000;
     overflow: hidden;
 }
@@ -231,17 +283,17 @@ section {
 .textoExpensas {
     width: 80%;
     margin-left: 10%;
-    height: 500px;
-    margin-top: 70px;
+    height: 530px;
+    margin-top: 40px;
     padding: 20px;
     float: left;
     border:#000 solid 1px;
     letter-spacing: 1px;
     text-align: justify;
-    font-size: 23px;
+    font-size: 22px;
     color:#fff;
     border-radius: 10px;
-    background-color: rgba(255, 123, 0, 0.8);
+    background-color: rgba(64, 120, 184, 0.8);
     box-shadow: 2px 3px 10px #000000;
     overflow: auto;
 }
@@ -249,17 +301,17 @@ section {
 .textoExpensasMini {
     width: 80%;
     margin-left: 10%;
-    height: 210px;
-    margin-top: 70px;
+    height: 220px;
+    margin-top: 50px;
     padding: 10px;
     float: left;
     border:#000 solid 1px;
     letter-spacing: 1px;
     text-align: justify;
-    font-size: 23px;
+    font-size: 22px;
     color:#fff;
     border-radius: 10px;
-    background-color: rgba(255, 123, 0, 0.8);
+    background-color: rgba(64, 120, 184, 0.8);
     box-shadow: 2px 3px 10px #000000;
     overflow: auto;
 }
@@ -267,8 +319,8 @@ section {
 .formExpensa {
     width: 80%;
     margin-left: 10%;
-    height: 390px;
-    margin-top: 70px;
+    height: 400px;
+    margin-top: 50px;
     padding-top: 10px;
     padding-left: 18%;
     float: left;
@@ -278,7 +330,7 @@ section {
     font-size: 25px;
     color:#fff;
     border-radius: 10px;
-    background-color: rgba(255, 123, 0, 0.8);
+    background-color: rgba(64, 120, 184, 0.8);
     box-shadow: 2px 3px 10px #000000;
     overflow: auto;
 }
@@ -336,7 +388,7 @@ section {
     font-size: 25px;
     color:#fff;
     border-radius: 10px;
-    background-color: rgba(255, 123, 0, 0.8);
+    background-color: rgba(64, 120, 184, 0.8);
     box-shadow: 2px 3px 10px #000000;
     overflow: auto;
 }
@@ -355,7 +407,7 @@ section {
     font-size: 25px;
     color:#fff;
     border-radius: 10px;
-    background-color: rgba(255, 123, 0, 0.8);
+    background-color: rgba(64, 120, 184, 0.8);
     box-shadow: 2px 3px 10px #000000;
     overflow: auto;
 }
@@ -426,11 +478,58 @@ footer {
     margin-right: 40px;
 }
 
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+    
+    .textoServicios {
+        height: 235px;
+        font-size: 17px;
+    }
+
+    .imgServicios {
+        width: 50px;
+        height: 50px;
+        padding-bottom: 5px;
+    }
+    
+    .titServicios {
+        width: calc(100% - 55px);
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+        margin-left: 5px;
+        padding-bottom: 5px;
+    }
+
+    #titulo {
+        margin-top: 330px;
+    }
+    
+    #titulo h2 {
+        font-size: 40px;
+    }
+    
+    .textoIndex {
+        margin-top: 50px;
+        font-size: 21px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     
     section {
         height: 900px;
     }
+
+    .definicion {
+        width: 96%;
+        margin-left: 2%;
+    }
+
+    .servicios {
+        height: 1350px;
+    }
+
     .textoClientes {
         margin-top: 60px;
         font-size: 20px;
@@ -440,12 +539,30 @@ footer {
         margin-top: 60px;
     }
 
+   .textoServicios {
+        height: auto;
+        margin-top: 30px;
+    }
+    
+    #titulo h2 {
+        font-size: 35px;
+    }
+    
+    .textoIndex {
+        margin-top: 40px;
+        font-size: 19px;
+    }
+
 }
 
-@media all and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     
     section {
         height: 800px;
+    }
+
+    .servicios {
+        height: 1580px;
     }
 
     .header {
@@ -457,12 +574,17 @@ footer {
     }
 
     .titulo {
-        height:80px;
+        height:90px;
     }
     
     h1 {
-        font-size: 70px;
+        font-size: 80px;
         margin-left: 15px;
+    }
+
+    .definicion {
+        width: 96%;
+        margin-left: 2%;
     }
 
     .textoClientes {
@@ -488,6 +610,10 @@ footer {
         overflow: hidden;
     }
     
+    .textoServicios {
+        height: auto;
+        margin-top: 30px;
+    }
 
     .botonera {
         padding: 0;
@@ -500,7 +626,24 @@ footer {
         margin: 0;
         border: none;
     }
-    
 
+    .cuadrosIndex {
+        width: 100%;
+    }
+    
+    #titulo {
+        margin-top: 40px;
+    }
+    
+    #titulo h2 {
+        font-size: 32px;
+    }
+    
+    .textoIndex {
+        margin-top: 40px;
+        width: 96%;
+        margin-left: 2%;
+        font-size: 19px;
+    }
 
 }
