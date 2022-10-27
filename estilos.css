@@ -80,10 +80,32 @@
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
+@keyframes titulo {
+    0% {
+        left: 0%;
+    }
+    5% {
+        transform: rotate(-30deg) scale(0.3, 0.3);
+    }
+    40% {
+        left: 70%;
+        transform: rotate(0deg) scale(0.5, 0.5);
+    }
+    50% {
+        transform: rotate(50deg) scale(0.3, 0.3);
+    }
+    100% {
+        left: 0%;
+    }
+}
+
 .titulo {
     width: 50%;
     float: left; 
     height:100px;
+    position: relative;
+    animation-name: titulo;
+    animation-duration: 3s;
 }
 
 h1 {
@@ -422,7 +444,7 @@ section {
     font-size: 20px;
 }
 
-#formContacto label{
+label{
     margin-bottom: 0px;
     margin-top : 15px;
     font-size: 20px;
