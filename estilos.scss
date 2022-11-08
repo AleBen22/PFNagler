@@ -1,0 +1,865 @@
+$naranja: #ff8800;
+$negro: #000000;
+$blanco: #ffffff;
+$sombraN: rgba(0, 0, 0, 0.5);
+$cuadros: rgba(64, 120, 184, 0.8);
+$hover: rgba(255, 123, 0, 0.8);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+}
+
+@keyframes vent {
+    40% {
+        transform: translate(0) scale(.4);
+        }        
+    50% {
+        transform: translate(0) scale(.5);
+        }
+    55% {
+        transform: translate(0) scale(.55);
+        }
+    60% {
+        transform: translate(0) scale(.6);
+        }
+    65% {
+        transform: translate(0) scale(.65);
+        }
+    70% {
+        transform: translate(0) scale(.7);
+        }
+    75% {
+        transform: translate(0) scale(.75);
+        }
+    80% {
+        transform: translate(0) scale(.8);
+        }
+    85% {
+        transform: translate(0) scale(.85);
+        }
+    90% {
+        transform: translate(0) scale(.9);
+        }
+    95% {
+        transform: translate(0) scale(.95);
+        }
+    100% {
+        transform: translate(0) scale(1);
+        }
+}
+
+.header {
+    width: 100%;
+    background-color: $naranja;    
+    height: 160px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 2px 3px 10px $negro;
+}
+
+.botonera li {
+    width: 130px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid $negro;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: $blanco;    
+}
+
+.botonera li:hover {
+    background-color: $hover;
+    box-shadow: 2px 2px 8px $sombraN;
+}
+
+@keyframes titulo {
+    0% {
+        left: 0%;
+        transform: rotate(0);
+    }
+    5% {
+        transform: rotate(-30deg) scale(0.3, 0.3);
+    }
+    40% {
+        left: 60%;
+        transform: rotate(0deg) scale(0.5, 0.5);
+    }
+    50% {
+        transform: rotate(50deg) scale(0.3, 0.3);
+    }
+    100% {
+        left: 0%;
+        transform: rotate(360deg);
+    }
+}
+
+.titulo {
+    width: 50%;
+    float: left; 
+    height:100px;
+    position: relative;
+    animation-name: titulo;
+    animation-duration: 3s;
+}
+
+h1 {
+    text-align: left;
+    font-size: 90px;
+    margin-left: 30px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 8px $sombraN;
+}
+
+h2 {
+    text-align: center;
+    font-size: 45px;
+    color: $blanco; 
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 8px $sombraN;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+label {
+    margin-bottom: 0px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.redes {
+    text-align: right;
+    font-size: 30px;
+    color: $negro;
+    width: 170px;
+    padding-right: 20px;
+    float: right;
+    margin-top: 50px;
+}
+
+section {
+    width: 100%;
+    margin-top: 140px;
+    height: 780px;
+    margin-bottom: 40px;
+    background-image: url(imagenes/fondo.jpg);
+    background-size: cover;
+}
+
+.cuadrosIndex {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+#titulo {
+    margin-top: 380px;
+    height: auto;
+    overflow: hidden;
+}
+
+.textoIndex {
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    margin-top: 70px;
+    padding: 10px;
+    float: left;
+    border: $negro solid 1px;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 22px;
+    color: $blanco;
+    border-radius: 10px;
+    background-color: $cuadros;
+    box-shadow: 2px 3px 10px $negro;
+    overflow: auto;
+    transform: translate(-500px, 500px);
+    animation: vent 1s forwards;
+}
+
+.definicion {
+    width: 70%;
+    height: auto;
+    float: left;
+    margin-left: 15%;
+    margin-top: 4vh;
+    border: $negro solid 1px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 35px;
+    color:$blanco;
+    border-radius: 10px;
+    background-color: $cuadros;
+    box-shadow: 2px 3px 10px $negro;
+    overflow: hidden;
+}
+
+.textoClientes {
+    height: auto;
+    float: left;
+    margin-top: 300px;
+    padding: 15px;
+    border: $negro solid 1px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 35px;
+    color:$blanco;
+    border-radius: 10px;
+    background-color: $cuadros;
+    box-shadow: 2px 3px 10px $negro;
+    overflow: hidden;
+    transform: translate(-500px, 500px);
+    animation: vent 1s forwards;
+}
+
+.cuadroClientes {
+    margin-top: 65px;
+    padding: 0;
+    height: 660px;
+    float: left;
+    border: $negro solid 1px;
+    border-radius: 40px;
+    box-shadow: 2px 3px 10px $negro;
+    overflow: hidden;
+    transform: translate(500px, -500px);
+    animation: vent 1s forwards;
+}
+
+.imgClientes {
+    padding: 0;
+    height: 660px;
+    overflow: hidden;
+}
+
+.cuadrosServicios, .cuadrosExpensas, .cuadrosContacto {
+    float: left;
+    margin: 0;
+}
+
+.imgServicios {
+    width: 60px;
+    height: 60px;
+    float: left;
+    padding-bottom: 10px;
+}
+
+.titServicios {
+    width: calc(100% - 74px);
+    height: 60px;
+    font-size: 23px;
+    line-height: 70px;
+    text-align: center;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+.textoServicios {
+    height: 240px;
+    margin-top: 60px;
+    padding: 10px;
+    float: left;
+    border: $negro solid 1px;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 20px;
+    color: $blanco;
+    border-radius: 10px;
+    background-color: $cuadros;
+    box-shadow: 2px 3px 10px $negro;
+    overflow: auto;
+}
+
+.textoServicios:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+    filter: drop-shadow(8px 8px 10px rgb(64, 120, 184));
+}
+
+.definicionExpensas {
+    width: 96%;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 70px;
+    border: $negro solid 1px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 35px;
+    color: $blanco;
+    border-radius: 10px;
+    background-color: $cuadros;
+    box-shadow: 2px 3px 10px $negro;
+    overflow: hidden;
+}
+
+.textoExpensas {
+    width: 96%;
+    margin-left: 2%;
+    height: auto;
+    margin-top: 40px;
+    padding: 20px;
+    float: left;
+    border: $negro solid 1px;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 20px;
+    color: $blanco;
+    border-radius: 10px;
+    background-color: $cuadros;
+    box-shadow: 2px 3px 10px $negro;
+    overflow: auto;
+}
+
+.textoExpensasMini {
+    width: 96%;
+    margin-left: 2%;
+    height: 240px;
+    margin-top: 50px;
+    padding: 10px;
+    float: left;
+    border: $negro solid 1px;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 20px;
+    color: $blanco;
+    border-radius: 10px;
+    background-color: $cuadros;
+    box-shadow: 2px 3px 10px $negro;
+    overflow: auto;
+}
+
+.formExpensa {
+    width: 96%;
+    margin-left: 2%;
+    height: auto;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-left: 10%;
+    float: left;
+    border: $negro solid 1px;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 20px;
+    color: $blanco;
+    border-radius: 10px;
+    background-color: $cuadros;
+    box-shadow: 2px 3px 10px $negro;
+    overflow: auto;
+    .textbox {
+        width: 86%;
+        margin-bottom: 8px;
+        border-radius: 10px;
+        border: 4px, $naranja;
+        border-color: $naranja;
+        background-color: $blanco;
+        text-align: center;
+        font-size: 20px;
+    }
+    .button {
+        position: relative;
+        width: 30%;
+        height: 40px;
+        border-radius: 30px;
+        border: 0 none;
+        margin-left: 8%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        background-color: $naranja;
+        box-shadow: 
+        12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+        -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    }
+    .button:hover {
+        background-color: $hover;
+        cursor: pointer;
+    }
+}
+
+.textoContacto {
+    width: 90%;
+    margin-left: 5%;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    float: left;
+    border: $negro solid 1px;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 21px;
+    color: $blanco;
+    border-radius: 10px;
+    background-color: $cuadros;
+    box-shadow: 2px 3px 10px $negro;
+    transform: translate(0px, 0px);
+    animation: vent 1s forwards;
+    overflow: auto;
+}
+
+#formContacto {
+    width: 90%;
+    margin-left: 5%;
+    height: 550px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-left: 15%;
+    float: left;
+    border: $negro solid 1px;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 21px;
+    color: $blanco;
+    border-radius: 10px;
+    background-color: $cuadros;
+    box-shadow: 2px 3px 10px $negro;
+    transform: translate(0px, 0px);
+    animation: vent 1s forwards;
+    overflow: auto;
+    .textbox {
+        width: 80%;
+        border-radius: 10px;
+        border: 4px, $naranja;
+        border-color: $naranja;     
+        background-color: $blanco;
+        text-align: center;
+        font-size: 20px;
+    }
+    .button {
+        position: relative;
+        width: 30%;
+        height: 40px;
+        border-radius: 30px;
+        border: 0 none;
+        margin-top: 10px;
+        margin-left: 6%;
+        font-size: 20px;
+        background-color: $naranja;
+        box-shadow: 
+        12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+        -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    }
+    .button:hover {
+        background-color: $hover;
+        cursor: pointer;
+    }
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: 10;
+    box-shadow: -2px -3px 10px $negro;
+}
+
+.footer {
+    width: 50%;   
+    background-color: $naranja;
+    float: left;  
+    padding-top: 10px;
+    height: 40px;
+}
+
+#derechos {
+    text-align: left;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+#desarrollo {
+    text-align: right;
+    margin-right: 40px;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+.definicion {
+    width: 96%;
+    margin-left: 2%;
+}
+
+#titulo {
+    margin-top: 330px;
+}
+    
+.textoIndex {
+    margin-top: 50px;
+    font-size: 21px;
+}    
+
+h2 {
+    font-size: 40px;
+}
+
+.textoServicios {
+    height: 235px;
+    font-size: 17px;
+}
+
+.imgServicios {
+    width: 50px;
+    height: 50px;
+    padding-bottom: 5px;
+}
+
+.titServicios {
+    width: calc(100% - 55px);
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 5px;
+    padding-bottom: 5px;
+}
+
+.definicionExpensas {
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.textoExpensas {
+    font-size: 17px;
+}
+
+.textoExpensasMini {
+    height: auto;
+    font-size: 17px;
+}
+
+.formExpensa {
+    font-size: 17px;
+    .textbox {
+        width: 87%;
+        margin-bottom: 6px;
+        border-radius: 10px;
+        font-size: 17px;
+    }
+    .button {
+        border-radius: 20px;
+        font-size: 17px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+}
+
+.textoContacto {
+    width: 96%;
+    margin-left: 2%;
+    height: auto;
+    font-size: 17px;
+}
+
+#formContacto {
+    width: 96%;
+    margin-left: 2%;
+    height: auto;
+    font-size: 17px;
+    padding-left: 8%;
+    .textbox {
+        width: 90%;
+        font-size: 17px;
+    }
+    .button {
+        width: 30%;
+        height: 40px;
+        margin-left: 10%;
+        margin-bottom: 15px;
+        font-size: 17px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+}
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+
+section {
+    height: 900px;
+}
+
+#expensas {
+    height: 1550px;
+}
+
+#servicios {
+    height: 1350px;
+}
+
+#contacto {
+    height: 1200px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.definicion {
+    width: 96%;
+    margin-left: 2%;
+    font-size: 30px;
+}
+
+.textoIndex {
+    margin-top: 40px;
+    font-size: 19px;
+}
+
+.textoClientes {
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.cuadroClientes {
+    margin-top: 60px;
+}
+
+.textoServicios {
+    height: auto;
+    margin-top: 30px;
+}
+
+.definicionExpensas {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.textoExpensas {
+    font-size: 17px;
+}
+
+.textoExpensasMini {
+    height: auto;
+    font-size: 17px;
+}
+
+.formExpensa {
+    font-size: 17px;
+    .textbox {
+        width: 87%;
+        margin-bottom: 6px;
+        border-radius: 10px;
+        font-size: 17px;
+    }
+    .button {
+        border-radius: 20px;
+        font-size: 17px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+}
+
+.textoContacto {
+    width: 90%;
+    margin-left: 5%;
+    height: auto;
+    font-size: 17px;
+}
+
+#formContacto {
+    width: 90%;
+    margin-left: 5%;
+    height: auto;
+    font-size: 17px;
+    padding-left: 8%;
+    .textbox {
+        width: 90%;
+        font-size: 17px;
+    }
+    .button {
+        width: 30%;
+        height: 40px;
+        margin-left: 10%;
+        margin-bottom: 15px;
+        font-size: 17px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+section {
+    height: 800px;
+}
+
+#servicios {
+    height: 1700px;
+}
+
+#expensas {
+    height: 1850px;
+}
+
+#contacto {
+    height: 1300px;
+}
+
+.header {
+    height: 140px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 2px 3px 10px $negro;
+}
+
+.titulo {
+    height:90px;
+}
+
+h1 {
+    font-size: 65px;
+    margin-left: 15px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.definicion {
+    width: 96%;
+    margin-left: 2%;
+    font-size: 30px;
+}
+
+.textoClientes {
+    margin-top: 40px;
+    font-size: 20px;
+    border-radius: 0px;
+}
+
+.cuadroClientes {
+    margin-top: 40px;
+}
+
+.cuadroClientes {
+    height: 500px;
+    border:$negro solid 1px;
+    border-radius: 0px;
+    box-shadow: 2px 3px 10px $negro;
+}
+
+.imgClientes {
+    padding: 0;
+    height: 500px;
+    overflow: hidden;
+}
+
+.textoServicios {
+    height: auto;
+    margin-top: 30px;
+}
+
+.botonera {
+    padding: 0;
+    z-index: 50;
+}
+
+.botonera li {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    border: none;
+}
+
+.cuadrosIndex {
+    width: 100%;
+}
+
+#titulo {
+    margin-top: 40px;
+}
+
+.textoIndex {
+    margin-top: 40px;
+    width: 96%;
+    margin-left: 2%;
+    font-size: 19px;
+}
+
+.definicionExpensas {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.textoExpensas {
+    font-size: 17px;
+}
+
+.textoExpensasMini {
+    height: auto;
+    font-size: 17px;
+}
+
+.formExpensa {
+    font-size: 17px;
+    .textbox {
+        width: 87%;
+        margin-bottom: 6px;
+        border-radius: 10px;
+        font-size: 17px;
+    }
+    .button {
+        border-radius: 20px;
+        font-size: 17px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+}
+
+.textoContacto {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+    font-size: 17px;
+}
+
+#formContacto {
+    width: 100%;
+    margin-left: 0%;
+    height: auto;
+    font-size: 17px;
+    padding-left: 8%;
+    .textbox {
+        width: 90%;
+        font-size: 17px;
+    }
+    .button {
+        width: 30%;
+        height: 40px;
+        margin-left: 10%;
+        margin-bottom: 15px;
+        font-size: 17px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 30px;   
+}
+
+#derechos, #desarrollo {
+    text-align: center;
+    margin-left: 0;
+}
+
+}
